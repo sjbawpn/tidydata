@@ -22,10 +22,11 @@ The tidy data is stored in a file called tidymean.csv
 **Data definition**
 
 | **Row Names** | **Row #** | **Type** | **Description** |
-| LAYING | 1 | Num | Laying Activity | Row Name |
-| SITTING | 2 | Num | Sitting Activity | Row Name |
-| STANDING | 3 | Num | Standing Activity | Row Name |
-| WALKING | 4 | Num | Walking Activity | Row Name |
+| --- | --- | --- | --- |
+| LAYING | 1 | Num | Laying Activity | 
+| SITTING | 2 | Num | Sitting Activity | 
+| STANDING | 3 | Num | Standing Activity | 
+| WALKING | 4 | Num | Walking Activity | 
 | WALKING_DOWNSTAIRS | 5 | Num | Walking Downstairs Activity |
 | WALKING_UPSTAIRS | 6 | Num | Walking Upstairs Activity |
 | 1:30 | 7:36 | Num | Test Subjects 1 to 30 |
