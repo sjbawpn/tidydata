@@ -1,12 +1,12 @@
 # Read activity lables and features
-activity_labels <- read.table("C:\\MinGW\\msys\\1.0\\home\\jarvis\\project\\r\\project\\UCI HAR Dataset\\activity_labels.txt", quote="\"")
-features <- read.table("C:\\MinGW\\msys\\1.0\\home\\jarvis\\project\\r\\project\\UCI HAR Dataset\\features.txt", quote="\"")
+activity_labels <- read.table("activity_labels.txt", quote="\"")
+features <- read.table("features.txt", quote="\"")
 
 ### Setup Train DATA
 # Read train data
-X_train <- read.table("C:\\MinGW\\msys\\1.0\\home\\jarvis\\project\\r\\project\\UCI HAR Dataset\\train\\X_train.txt", quote="\"")
-y_train <- read.table("C:\\MinGW\\msys\\1.0\\home\\jarvis\\project\\r\\project\\UCI HAR Dataset\\train\\y_train.txt", quote="\"")
-subject_train <- read.table("C:\\MinGW\\msys\\1.0\\home\\jarvis\\project\\r\\project\\UCI HAR Dataset\\train\\subject_train.txt", quote="\"")
+X_train <- read.table("train\\X_train.txt", quote="\"")
+y_train <- read.table("train\\y_train.txt", quote="\"")
+subject_train <- read.table("train\\subject_train.txt", quote="\"")
 # Set the column names for train
 colnames(X_train) <- features$V2
 # Bind the suject ID to the x train
@@ -23,9 +23,9 @@ xTrain_clean <- xTrain_full[, c(idx, (1:ncol(xTrain_full))[-idx])]
 
 ### Setup Test DATA
 # Read test data
-X_test <- read.table("C:\\MinGW\\msys\\1.0\\home\\jarvis\\project\\r\\project\\UCI HAR Dataset\\test\\X_test.txt", quote="\"")
-y_test <- read.table("C:\\MinGW\\msys\\1.0\\home\\jarvis\\project\\r\\project\\UCI HAR Dataset\\test\\y_test.txt", quote="\"")
-subject_test <- read.table("C:\\MinGW\\msys\\1.0\\home\\jarvis\\project\\r\\project\\UCI HAR Dataset\\test\\subject_test.txt", quote="\"")
+X_test <- read.table("test\\X_test.txt", quote="\"")
+y_test <- read.table("test\\y_test.txt", quote="\"")
+subject_test <- read.table("test\\subject_test.txt", quote="\"")
 # Set the column names for test
 colnames(X_test) <- features$V2
 # Bind the suject ID to the x test
